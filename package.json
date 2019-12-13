@@ -9,8 +9,8 @@
   "author": "Bowden Kelly",
   "license": "MIT",
   "scripts": {
-    "start": "npm run serve",
-    "client-build": "cd client && npm run build && cp -rf build ../dist/",
+    "start": "npm run build && npm run serve",
+    "client-build": "cd client && npm run build && cp -rf build ../public/",
     "build": "npm run build-sass && npm run build-ts && npm run lint && npm run copy-static-assets && npm run client-build",
     "serve": "node dist/server.js",
     "watch-node": "nodemon dist/server.js",
